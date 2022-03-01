@@ -1,10 +1,9 @@
-package com.sykfactory.dismiss_keyguard.dismiss_keyguard
+package com.sykfactory.dismiss_keyguard
 
 import android.app.Activity
 import android.app.KeyguardManager
 import android.content.Context
 import android.os.Build
-import android.util.Log
 import android.view.WindowManager
 import androidx.annotation.NonNull
 
@@ -16,7 +15,6 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import java.util.*
-import kotlin.concurrent.thread
 
 /** DismissKeyguardPlugin */
 class DismissKeyguardPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
@@ -41,9 +39,6 @@ class DismissKeyguardPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
         } else {
           activity.window.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED)
         }
-//        Log.e("DismissKeyguard", "start!")
-//        while (keyguardManager.isDeviceLocked) Thread.sleep(100)
-//        Log.e("DismissKeyguard", "end!")
       }
     } else {
       result.notImplemented()

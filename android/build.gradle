@@ -1,4 +1,4 @@
-group 'com.sykfactory.dismiss_keyguard.dismiss_keyguard'
+group 'com.sykfactory.dismiss_keyguard'
 version '1.0-SNAPSHOT'
 
 buildscript {

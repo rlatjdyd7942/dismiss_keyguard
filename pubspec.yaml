@@ -20,5 +20,5 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.sykfactory.dismiss_keyguard.dismiss_keyguard
+        package: com.sykfactory.dismiss_keyguard
         pluginClass: DismissKeyguardPlugin
